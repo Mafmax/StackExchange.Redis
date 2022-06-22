@@ -187,7 +187,8 @@ envoyproxy
 ---
 [Envoyproxy](https://github.com/envoyproxy/envoy) is a tool that allows to front a redis cluster with a set of proxies, with inbuilt discovery and fault tolerance. The feature-set available to Envoyproxy is reduced. To avoid having to configure this manually, the `Proxy` option can be used:
 ```csharp
-var options = new ConfigurationOptions+{
+var options = new ConfigurationOptions
+{
     EndPoints = { "my-proxy1", "my-proxy2", "my-proxy3" },
     Proxy = Proxy.Envoyproxy
 };
